@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "terraform-up-and-running-state-18-1"
+  bucket = "terraform-state-seada98"
 
     lifecycle {
         prevent_destroy = false
@@ -26,7 +26,7 @@ resource "aws_dynamodb_table" "terraform_lock" {
 }
 terraform {
   backend "s3" {
-    bucket = "terraform-up-and-running-state-18-1"
+    bucket = "terraform-state-seada98"
     key = "dev/terraform.tfstate"
     region = "us-east-1"
     #dynamodb_table = "terraform-up-running-locks"

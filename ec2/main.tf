@@ -50,8 +50,6 @@ resource "aws_instance" "ec2_pu" {
         "sudo sleep 5",
         "sudo systemctl restart httpd",
         
-        # "sudo systemctl restart httpd",
-
     ]
   }
 provisioner "local-exec" {
