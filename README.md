@@ -1,3 +1,3 @@
 # terraform-la3
 
-![home_Page Image](./image.jpg)
+![home_Page Image](./image.JPG)
